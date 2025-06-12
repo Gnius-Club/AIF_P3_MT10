@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P3-TM10</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 10 3ro Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Micro:bit: Sensor de Luz (leer valor del sensor de luz). Operadores (>, <).</li>
+                                        <li>Plan (GCS): Usar valor de luz en condiciones.</li>
+                                        <li>IA (Conceptual): ¿Cómo IAs usan sensores de luz en la vida real? (luces auto, brillo pantalla).</li>
+                                        <li>AIA: IA en la Vida Cotidiana: Ejemplos de IA con sensores de luz.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes aprendan a leer el valor del sensor de luz del Micro:bit y a usar operadores de comparación (mayor que, menor que) para programar reacciones basadas en los niveles de luz, conectando esto con aplicaciones de IA en la vida cotidiana.</li>
+                                    </ul>
+                                    <strong>Tácticas Principales:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
+                                        <li><strong class="tactic-highlight">AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y bloques.</li>
+                                        <li><strong class="tactic-highlight">Brain Spark:</strong> Proceso de ideación, diseño (plan con IA) y programación individual.</li>
+                                        <li><strong class="tactic-highlight">Gnius STORM (Think-Pair-Share):</strong> Compartición, prueba y retroalimentación de proyectos.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en Micro:bit que reaccione a diferentes niveles de luz (ej. mostrando un icono de sol con mucha luz y un icono de luna con poca luz), utilizando el sensor de luz y operadores de comparación, creado a partir de un plan (GCS) y la ayuda de la IA.</li>
+                                        <li>Retroalimentación recibida y dada durante Gnius STORM.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo IA) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-16 propuestas para esta sesión).</li>
+                                        <li>Micro:bits y baterías.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Fuente de luz variable (ej. linterna de celular, posibilidad de oscurecer parcialmente el aula o cubrir el Micro:bit).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode.</li>
+                                                <li>Asegurar disponibilidad y carga de Micro:bits/baterías.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad. Entender cómo funciona el sensor de luz del Micro:bit (la matriz LED actúa como sensor).</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional un proyecto en Micro:bit que reaccione a la luz (ej. encender un LED externo o mostrar un icono simple) para la demostración en Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y genera entusiasmo por darle al Micro:bit el "superpoder" de ver la luz.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo del Profesor e Instrucción a Xolo ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Saludar a los alumnos y dar la instrucción de recordar su perfil a la IA y saludarla.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, Genios! 👋 ¡Bienvenidos a una misión donde haremos que nuestro Micro:bit 'vea' el mundo! Como siempre, activaremos a Xolo. Salúdenlo y recuérdenle su perfil.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Respuesta de Xolo y Verificación ⏰ 2.5 minutos</h3>
+                            <p>(Los alumnos interactúan con Xolo. El profesor monitorea).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Excelente! Xolo ya les está respondiendo: "¡Hola, guardianes de la luz! Hemos enseñado al Micro:bit a sentir botones y movimientos. ¿Y si ahora le damos el superpoder de 'ver' la luz que hay a su alrededor? ¡Hoy haremos que nuestro Micro:bit reaccione a la claridad y la oscuridad, como un verdadero detector de luz!" ¿Todos recibieron el saludo de Xolo? Si alguien tiene problemas, avíseme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Introducción de la Misión con "I Can Statement" ⏰ 5 minutos</h2>
+                <p>Presentar cómo los sensores de luz se usan en la vida real y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Sensores de Luz en el Mundo Real y Ejemplo del Profesor ⏰ 2.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). El profesor explica aplicaciones de sensores de luz y muestra su ejemplo de Micro:bit reaccionando a la luz.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Se han fijado que sus teléfonos a veces ajustan el brillo de la pantalla automáticamente? O que las luces de algunas calles se encienden solas cuando anochece. ¡Eso es gracias a un sensor de luz! Su Micro:bit también tiene uno. (Opcional: El profesor muestra SU Micro:bit con SU ejemplo preparado que reacciona a la luz, tapándolo y destapándolo. Puede preguntar: "¿Cómo creen que este Micro:bit sabe cuándo encender o apagar su luz/icono?"). Hoy vamos a hacer que el Micro:bit reaccione a la luz, como si fuera una pequeña luz de calle inteligente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" ⏰ 2.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). El profesor presenta el "I Can Statement".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: <strong>"Yo puedo hacer que mi Micro:bit lea la cantidad de luz a su alrededor y reaccione de forma diferente si hay mucha luz o poca luz, usando mi plan (GCS) y la ayuda de la IA."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
+                <p>Los alumnos interactúan con Xolo para aprender sobre el sensor de luz, operadores de comparación y su uso en IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para interactuar con Xolo ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Guiar a los alumnos para que pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Al A.I. GYM de la luz! 💡 Xolo nos enseñará cómo el Micro:bit "ve" y cómo podemos usar esa información. Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me expliques cómo funciona el sensor de luz del Micro:bit, qué son los operadores de comparación ">" y "<", y cómo las IAs usan sensores de luz en la vida real.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo y Preguntas ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 6, 7 y 8 durante la interacción). Los alumnos reciben la explicación de Xolo directamente en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Genial! Xolo les está explicando que el sensor de luz del Micro:bit (¡que es su propia pantalla LED!) mide cuánta luz hay y da un número de 0 (oscuro) a 255 (brillante). Les está enseñando el comando `leer sensor de luz` y los operadores `>` (mayor que) y `<` (menor que) para comparar ese número. También les cuenta cómo las IAs usan estos sensores en teléfonos para ajustar brillo o en coches para encender luces. Si tienen dudas sobre los números del sensor de luz o los operadores, ¡pregúntenle a Xolo!<br>
+                                    <strong>* 'Xolo, ¿qué número sería "muy poca luz" en mi salón?'</strong><br>
+                                    <strong>* '¿Puedo usar el signo "=" para comparar la luz?'</strong><br>
+                                    <strong>* 'Dame otro ejemplo de una IA que use un sensor de luz.'</strong></p>
+                                 <p class="dialogue assistant">Xolo podría mostrarles un ejemplo de plan (GCS) como este (o uno más simple con un solo SI si lo ven apropiado):</p>
+                                 <pre class="dialogue assistant" style="color: #d32f2f;">
+POR SIEMPRE:
+    SI (leer sensor de luz < 50): // Si hay poca luz
+        mostrar icono LUNA
+    SINO:
+        mostrar icono SOL
+    FIN SI</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Proceso de ideación, diseño (plan con IA) y programación individual para que el Micro:bit reaccione a la luz.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ideación de su Proyecto de Luz ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Pregunta activadora para la idea del proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Guardianes de la luz, a crear! Ahora que saben cómo el Micro:bit "ve", <strong>¿qué reacción quieren programar? "Quiero que mi Micro:bit muestre una lámpara encendida cuando hay poca luz y una lámpara apagada cuando hay mucha luz." O quizás un ojo abierto con luz y cerrado en la oscuridad. O un mensaje de '¡Oscuro!' o '¡Claro!'.</strong> Si no se les ocurre una idea, pueden pedirle a Xolo: 'Xolo, dame una idea simple para que mi Micro:bit reaccione a la luz.' ¡Piensen en su idea o consulten con Xolo! Tienen 1 minuto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pedir el Plan a Xolo para su Reacción a la Luz ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Instrucción para pedir el plan (GCS) a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Ya tienen su idea (su 'vibe')? ¡Perfecto! Ahora, explíquenle a Xolo. Por ejemplo: <strong>'Xolo, quiero que mi Micro:bit muestre un dibujo de lámpara encendida si el sensor de luz lee menos de 80, y un dibujo de lámpara apagada si lee más.'</strong> (O la idea que hayan elegido). Xolo les ayudará a estructurar el plan (GCS), incluyendo los números para 'poca luz' o 'mucha luz' (pueden experimentar con estos números después).</p>
+                                 <p class="dialogue assistant">Xolo podría generar un plan (GCS) para el ejemplo de la lámpara así:</p>
+                                 <pre class="dialogue assistant" style="color: #d32f2f;">
+POR SIEMPRE:
+    SI (leer sensor de luz < 80):
+        // Lámpara encendida (ejemplo con LEDs)
+        mostrar LEDs XOXOX
+                     XOXOX
+                     OXXXO
+                     OOOOO
+                     OOOOO
+    SINO:
+        // Lámpara apagada (ejemplo con LEDs)
+        mostrar LEDs XOXOX
+                     XOXOX
+                     OOOOO
+                     OOOOO
+                     OOOOO
+    FIN SI</pre>
+                                 <p class="dialogue assistant">¡Fíjense en cómo usa `leer sensor de luz < 80` y el `SINO` para las dos condiciones!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación en MakeCode y Prueba con Luz ⏰ 13 minutos</h3>
+                            <p>(Proyectar Diapositiva 11). Tiempo para traducir el plan a bloques, probar y depurar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡A programar! Tomen el plan de Xolo y tradúzcanlo a bloques en MakeCode. Necesitarán el bloque `por siempre`, `si...entonces...sino`, el sensor `nivel de luz`, los operadores `>` o `<`, y los bloques `mostrar LEDs` o `mostrar icono`. Tienen 13 minutos.<br>
+                                    <strong>* Prueben en el simulador:</strong> MakeCode tiene un control deslizante para simular el nivel de luz. ¡Úsenlo!<br>
+                                    <strong>* Prueben en el Micro:bit físico:</strong> Cubran la pantalla LED con la mano para simular oscuridad, o acérquenle la luz de un celular para simular mucha luz. ¿Reacciona como esperaban? ¿Necesitan ajustar el número del umbral (ej. 80)?<br>
+                                    <strong>* Si no funciona, ¡depuren!</strong> Revisen sus condiciones y los operadores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Mejoras - Explorando el Sensor de Luz (Si hay tiempo) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 12). Sugerir mejoras y exploraciones adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Si su detector de luz ya funciona, ¡magnífico! ¿Quieren explorar más? <strong>"¿Puedes hacer que muestre un número (el valor de la luz leído por el sensor) en la pantalla para que veas cómo cambia?"</strong> (Pista: usen `mostrar número` con `nivel de luz`). <strong>"¿Puedes hacer que la pantalla de LEDs se ilumine más o menos según la cantidad de luz, como un medidor de luz?"</strong> (Pista: exploren el bloque `establecer brillo de pantalla`). ¡Pregunten a Xolo cómo modificar su plan para estos desafíos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir proyectos de reacción a la luz y reflexionar sobre la IA y los sensores.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 13). Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Guardianes de la luz, sus Micro:bits ahora pueden "ver"! Antes de compartir, piensen:<br>
+                                    <strong>¿Qué fue lo más sorprendente de que el Micro:bit pudiera 'ver' la luz?</strong><br>
+                                    <strong>¿Fue fácil o difícil usar los números del sensor de luz para que reaccionara?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 14). Instrucciones para el intercambio de proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, en parejas! Muestren cómo su Micro:bit reacciona a los cambios de luz. Explíquenle a su compañero qué hace su proyecto y cómo usaron el sensor de luz y las condiciones. El compañero puede probarlo cubriendo el Micro:bit o acercándole luz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación y Discusión Grupal) ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 15). Fomentar la compartición de experiencias sobre el uso de sensores de luz.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Muy bien! Ahora, compartamos algunas experiencias: ¿Qué fue lo más sorprendente de que el Micro:bit pudiera 'ver' la luz? ¿Para qué más cosas creen que es útil que las máquinas tengan un sensor de luz?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Cierre del Profesor/Chatbot) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 16). Cierre de la sesión conectando con la IA en la vida real.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hoy han hecho que su Micro:bit sea un verdadero 'detector de luz'! Han usado un sensor y han programado decisiones basadas en los datos que ese sensor les dio. Así es exactamente como funcionan muchísimas IAs en la vida real: recogen información del mundo (con sensores de luz, de temperatura, de movimiento, etc.) y luego usan esa información para tomar decisiones inteligentes o hacer tareas útiles. ¡Lo hicieron genial, haciendo que sus Micro:bits 'vieran' el mundo a su alrededor!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
